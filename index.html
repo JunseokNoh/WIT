@@ -1,0 +1,283 @@
+  <!doctype html>
+  <html lang="ko">
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162427693-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162427693-1');
+      </script>
+
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta property="og:title" content="WIT선거운동본부">
+      <meta property="og:description" content="The Best Fit, SUIT">
+      <meta property="og:image" content="https://raw.githubusercontent.com/GeneralNo/SUIT/master/SUIT_LOGO.jpg">
+
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+      <title>WIT 선거운동본부</title>
+      <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/rellax@1.7.1/rellax.min.js" integrity="sha256-D8Gs+q912m9K1KjzTzBQas+zR0oQtxQEZDHh8NVVDx8=" crossorigin="anonymous"></script>
+      <script defer src="js/main.js"></script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128918304-1"></script>
+      <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());  gtag('config', 'UA-128918304-1');</script>
+
+      <link rel="icon" type="image/png" href="WIT_LOGO2.png">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,500,900">
+
+     <style>
+        body {
+          font-family: 'Noto Sans KR', sans-serif;
+          font-weight: 300;
+          color: #1b0000;
+          background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+          background-color: #ffffff;
+        }
+        header{
+       	  /*background-color: rgba(32,33,36,0.5)   */
+       	   	background-color:white
+        }
+        main {
+       	  background-color:white
+        }
+        footer{
+        background-color:white
+        }
+        a, a:link, a:visited, a:hover, a:active {
+          color: inherit;
+          text-decoration: none;
+        }
+        img {
+          width: 100%;
+        }
+        h1 {
+          font-size: 36px;
+          font-weight: 100;
+          letter-spacing: -0.01em;
+          margin-bottom: 24px;
+          transition-delay: 0, 0;
+        }
+        p {
+          font-size: 14px;
+          padding-right: 1px;
+          padding-left: 1px;
+          color : black;
+        }
+        p:not(.cta), .kard {
+          transition-delay: 0.15s, 0.15s;
+        }
+        p.cta {
+          margin-top: 24px;
+          transition-delay: 0.3s, 0.3s;
+        }
+        .animate {
+          opacity: 0;
+          transform: translateY(25px);
+          transition-property: opacity, transform;
+          transition-duration: 1.2s, 1.4s;
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          will-change: opacity, transform;
+        }
+        .reveal .animate {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+        .kard {
+          position: relative;
+          width: 100%;
+          height: 90px;
+          padding-top: 30px;
+          padding-left: 80px;
+          margin-bottom: 20px;
+          font-size: 18px;
+          font-weight: 500;
+          background-color: rgba(255,255,255,0.1);
+          border-radius: 4px;
+          box-shadow: 0 3px 3px -2px rgba(15, 76, 129, 0.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+        }
+        .kard__icon {
+          position: absolute;
+          top: 27px;
+          left: 27px;
+          width: 45px;
+          height: 45px;
+        }
+        .cta {
+          font-weight: 500;
+          text-align: center;
+          /*color: #df0909;*/
+          color:black;
+        }
+        .rellax {
+          will-change: transform;
+        }
+        .fadeout {
+          will-change: opacity;
+          transition: opacity 400ms cubic-bezier(.4, 0, .6, 1);
+        }
+        .fadeout--invisible {
+          opacity: 0;
+        }
+        .rellax.fadeout {
+          will-change: transform, opacity;
+        }
+        .hidden {
+          display: none;
+        }
+        .toggle-xxs__toggled {
+          display: none;
+        }
+        #scaledown {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          transform-origin: center bottom;
+          will-change: transform, top;
+        }
+      </style>
+    </head>
+    <body></body>
+      <header style="height: 80vh; padding-top: 15vh;">
+        <div class="container">
+          <div class="row">
+            <div class="col-8 col-sm-7 col-md-6 col-lg-5 col-xl-4 mx-auto">
+              <div style="width: 100%; height: 0; overflow: visible; position: relative; padding-top: 100%;">
+                <img id="scaledown" src="WIT_LOGO1.png">
+              </div>
+              <div style="width: 100%; height: 0; overflow: visible; position: relative; padding-top: 50px;">
+                <img id="scaledown" src="WIT_LOGO3.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section style="padding-top: 200px; padding-left: 20px; position: relative;">
+          <div class="container">
+            <div class="row">
+              <div class="col-8 col-sm-7 col-md-6 col-lg-5 col-xl-3 mx-auto">
+                <div class="rellax fadeout" style="width: 100%;">
+                  <img src="meet_wit.png" >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section style="padding-top: 200px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                <div id="fadeout-1" class="rellax" data-rellax-speed="1">
+                  <h1 class="animate"><span style="color:rgb(135, 206, 250); font-weight: 900;">SUIT</span> 정후보 <span style= "font-weight:300;">박기범</span></h1>
+                  <p class="animate">안녕하십니까, <span style="color:rgb(135, 206, 250); font-weight: 900;">WIT</span> 정후보 박기범입니다.</p>
+                  <p class="animate">저는 학생회가 여러분의 관심과 참여로 만들어진다고 생각합니다.</p>
+                  <p class="animate">IT대학 학우 여러분들의 목소리에 귀 기울이는, 먼저 다가가는 <span style="color:rgb(135, 206, 250); font-weight: 900;">WIT</span></p>
+                  <p class="animate">필요할때 항상 곁에 있는 <span style="color:rgb(135, 206, 250); font-weight: 900;">WIT</span></p>
+                  <p class="animate">피부로 느끼는 어려움을 <span style="color:rgb(135, 206, 250); font-weight: 900;">WIT</span> 있게 풀어나가겠습니다.</p>
+                  <p class="animate">함께하면 할 수 있습니다.</p>
+                  <p class="animate">With <span style="color:rgb(135, 206, 250); font-weight: 900;">WIT</span> We Do!!</p>
+                  <p class="animate cta">
+                  </p>
+                  <a href="policies/park.html"><span style="color:rgb(0, 0, 0); font-weight: 900;">정후보 약력 보기&gt;</span></div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <div class="row">
+            <div class="col-8 col-sm-7 col-md-6 col-lg-5 col-xl-4 mx-auto">
+              <div style="width: 100%; height: 0; overflow: visible; position: relative;">
+                <img id="scaledown" src="WIT_LOGO3.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <section style="padding-top: 300px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-8 col-sm-7 col-md-6 col-lg-5 col-xl-3 mx-auto">
+                <div class="rellax fadeout" style="width: 100%;">
+                  <img src="with_wit.png" >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section style="padding-top: 200px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                <div id="fadeout-1" class="rellax" data-rellax-speed="1">
+                  <h1 class="animate"><span style="color:rgb(135, 206, 250); font-weight: 900;">WIT</span> 부후보 <span style= "font-weight:300;">김가희</span></h1>
+                  <p class="animate">안녕하십니까, <span style="color:rgb(135, 206, 250); font-weight: 900;">WIT</span> 부후보 김가희입니다.</p>
+                  <p class="animate">저는 지난 3년간 학생회에 몸담고 있으며, 사소한 것에 대한 소중함을 많이 알게 되었습니다.</p>
+                  <p class="animate">저는 학우 여러분들이 직접 체감할 수 있도록 최대한 현실적인 도움을 드리고 싶습니다.</p>
+                  <p class="animate">힘든 2020년이었지만 새롭게 도약하여 나아갈 수 있는 2021년이 될 수 있도록 노력하겠습니다.</p>
+                  <p class="animate">항상 IT대학 학우 여러분 가장 가까이에서 함께하겠습니다.</p>
+                  <p class="animate">2021년은 <span style="color:rgb(135, 206, 250); font-weight: 900;">WIT</span>있게! <span style="color:rgb(135, 206, 250); font-weight: 900;">WIT</span> We Do!!</p>
+                  <p class="animate cta"></p>
+                  <a href="policies/kim.html"><span style="color:rgb(0, 0, 0); font-weight: 900;">부후보 약력 보기&gt;</span></div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        </section>
+        <section style="padding-top: 120px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                <div class="rellax" data-rellax-speed="1">
+                  <h1 class="animate" id="commit"> <span style="color:rgb(135, 206, 250); font-weight: 900; text-align: center;">WIT</span>의 공약</h1>
+                  <a href="policies/daily.html"><div class="animate kard"><div class="kard__icon"><img src="daily.png"></div><span style="color:rgb(135, 206, 250); font-weight: 400;">일 상</span></div></a>
+                  <a href="policies/facility.html"><div class="animate kard"><div class="kard__icon"><img src="facility.png"></div><span style="color:rgb(135, 206, 250); font-weight: 400;">시 설</span></div></a>
+                  <a href="policies/alliance_text.html"><div class="animate kard"><div class="kard__icon"><img src="alliance.png"></div><span style="color:rgb(135, 206, 250); font-weight: 400;">제휴 & 교육</span></div></a>
+                  <a href="policies/communication.html"><div class="animate kard"><div class="kard__icon"><img src="communication.png" style="color:rgb(15, 76, 129);"></div><span style="color:rgb(135, 206, 250); font-weight: 400;">소 통</span></div></a>
+
+
+                    <p class="animate cta">
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section style="padding-top: 200px; padding-right: 10px;">
+          <!--
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                <div class="rellax">
+                  <img src="we_do.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+        </section>
+      </main>
+      <footer style="height: 100vh;">
+        <div class="container">
+          <div class="row">
+            <div class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-5 mx-auto text-center">
+              <div style="padding-top: 3px;">
+                <img src="we_do.png">
+              </div>
+            <div class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-5 mx-auto text-center">
+              <div style="padding-top: 12.5vh;">
+                <a href="https://www.facebook.com/2020SUIT/"><img src= "policies/img/facebook.png" style ="width: 48px; height: 48px;"></a><a href="https://www.instagram.com/knu_it_suit/"><img src="policies/img/insta.png" style="width: 54px; height: 54px; margin-left: 28px;">
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>
